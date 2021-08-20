@@ -49,5 +49,5 @@ for subreddit in subreddits:
                     reply = True
 
 if reply == True:
-    with open("replied_to.json", "w") as f:
+    with open("replied_to.json", "r+") as f:
         json.dump(replies, f)

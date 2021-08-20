@@ -27,6 +27,7 @@ replies = []
 replied = []
 for item in replied_to:
     replied.append(item['comment_id'])
+    replies.append(item)
 
 for subreddit in subreddits:
     sub = reddit.subreddit(subreddit)

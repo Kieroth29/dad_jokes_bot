@@ -1,7 +1,5 @@
 import praw
-import pdb
 import re
-import os
 import json
 from random import choice
 

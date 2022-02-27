@@ -63,7 +63,5 @@ scheduler = BackgroundScheduler()
 scheduler.add_job(reply, 'interval', minutes=15, max_instances=3)
 scheduler.start()
 
-reply()
-
 while True:
     time.sleep(0)

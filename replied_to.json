@@ -1,14 +1,1 @@
-[
-    {
-        "submission_id": "p7q23v",
-        "submission_title": "Dad jokes",
-        "comment_id": "h9lv3rm",
-        "comment": "u/dad_jokes_bot"
-    },
-    {
-        "submission_id": "p7q23v",
-        "submission_title": "Dad jokes",
-        "comment_id": "h9m0ohu",
-        "comment": "u/dad_jokes_bot"
-    }
-]
+[{"submission_id": "p7q23v", "submission_title": "Dad jokes", "comment_id": "h9lv3rm", "comment": "u/dad_jokes_bot"}, {"submission_id": "p7q23v", "submission_title": "Dad jokes", "comment_id": "h9m0ohu", "comment": "u/dad_jokes_bot"}, {"submission_id": "t2u9cs", "submission_title": "i love python", "comment_id": "hyospro", "comment": "hey bud, excuse me! just bunnyhopping into your thread for a minute, cuz mine isn't showing in the PRAW api ;)\n\ndad joke"}]

@@ -3,9 +3,7 @@ import pdb
 import re
 import os
 import json
-from dotenv import load_dotenv
 from random import choice
-load_dotenv()
 
 reddit = praw.Reddit('bot1')
 
@@ -31,14 +29,13 @@ for item in replied_to:
 
 for subreddit in subreddits:
     sub = reddit.subreddit(subreddit)
-    for submission in sub.new(limit=10):
-
+    for submission in [item for item in sub.new(limit=1000) if item.author is not None]:
         submission.comments.replace_more(limit=None)
         for comment in submission.comments.list():
             if comment.id not in replied:
                 if re.search("dad jokes", comment.body, re.IGNORECASE) or re.search("dad joke", comment.body, re.IGNORECASE) or re.search("u/dad_jokes_bot", comment.body, re.IGNORECASE):
                     joke = choice(jokes)
-                    comment.reply(joke)
+                    comment.reply(joke, "\nI'm a bot! To summon me, comment 'dad joke', 'dad jokes' or just @me (u/dad_jokes_bot). If you wish to add or remove me to/from a subreddit, or check the list of supported ones, contact [my creator](https://reddit.com/u/AntaresSlayer), or issue a pull request to the subreddits.txt file in [my public repo!](https://github.com/Kieroth29/dad_jokes_bot)")
 
                     replies.append({
                         "submission_id": submission.id,

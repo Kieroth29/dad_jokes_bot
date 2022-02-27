@@ -9,7 +9,8 @@ Supported subreddits are in the **subreddits.txt** file. Feel free to open pull 
 
 ```
 subreddit1;
-subreddit2
+subreddit2;
+subreddit3
 ```
 
 ## Modules

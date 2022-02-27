@@ -8,7 +8,8 @@ dad_jokes_bot is triggered by mentions (u/dad_jokes_bot)
 Supported subreddits are in the **subreddits.txt** file. Feel free to open pull requests to add this bot to your favorite subs, including its name to the top of the file. The format is:
 
 ```
-subreddit;
+subreddit1;
+subreddit2
 ```
 
 ## Modules
